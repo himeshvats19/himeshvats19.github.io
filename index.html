@@ -78,7 +78,7 @@
   'GET',
   {"fields":"id,name,picture"},
   function(response) {
-      console.log(response);
+      document.getElementById('status').innerHTML = '<img src="'+response.picture.data.url+'"/>'
   }
 );
   }
