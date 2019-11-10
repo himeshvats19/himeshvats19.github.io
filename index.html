@@ -1,101 +1,219 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Facebook Login JavaScript Example</title>
-<meta charset="UTF-8">
-</head>
-<body>
-<script>
-  // This is called with the results from from FB.getLoginStatus().
-  function statusChangeCallback(response) {
-    console.log('statusChangeCallback');
-    console.log(response);
-    // The response object is returned with a status field that lets the
-    // app know the current login status of the person.
-    // Full docs on the response object can be found in the documentation
-    // for FB.getLoginStatus().
-    if (response.status === 'connected') {
-      // Logged into your app and Facebook.
-      testAPI();
-    } else {
-      // The person is not logged into your app or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Please log ' +
-        'into this app.';
-    }
-  }
 
-  // This function is called when someone finishes with the Login
-  // Button.  See the onlogin handler attached to it in the sample
-  // code below.
-  function checkLoginState() {
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-  }
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
 
-  window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '606303369543251',
-    cookie     : true,  // enable cookies to allow the server to access 
-                        // the session
-    xfbml      : true,  // parse social plugins on this page
-    version    : 'v2.8' // use graph api version 2.8
-  });
+  <body>
+      <div class="container main">
+            <div class="row">
+              <div class="col-sm">
+               <h2>dreamer, thinker, creator</h2>
+               
+               <p>hi!, my name is <strong>Himesh Vats </strong>& i'm a full stack developer</p>
+               <ul>
+                  <li><a href="mailto:himeshvats19@gmail.com">email</a></li>
+                   <li><a href="https://github.com/himeshvats19" target="_blank">github</a></li>
+                   <li><a href="https://www.linkedin.com/in/himeshvats/" target="_blank">linkedin</a></li>
+                   <li><a href="https://medium.com/@himeshvats19" target="_blank">blog</a></li>
+                   <li><a href="resume.pdf" target="_blank">resume</a></li>
+                 </ul>
+               <p>I have 6+ years of experience in building complex systems to make scaling and collaboration easy for designers and creative teams. Most of my work involves Javascript, HTML, CSS but I also dabble in Python & MongoDB.</p>
 
-  // Now that we've initialized the JavaScript SDK, we call 
-  // FB.getLoginStatus().  This function gets the state of the
-  // person visiting this page and can return one of three states to
-  // the callback you provide.  They can be:
-  //
-  // 1. Logged into your app ('connected')
-  // 2. Logged into Facebook, but not your app ('not_authorized')
-  // 3. Not logged into Facebook and can't tell if they are logged into
-  //    your app or not.
-  //
-  // These three cases are handled in the callback function.
+                 <p> In previous avatars I have done both User Experience Design & Mobile Application Development as a Freelance developer.
+                  
+                  </p>
+              </div>
+            </div>
+        </div>
+        <!--EXP-->
+        <div class="container exp">
+          <div class="row">
+              <h3>professional experience</h3>
+          </div>
+          <div class="row">
+              <div class="col-sm">
+                <a href="https://www.icf.com/next">ICF Next</a>
+                <span>(Jan, 2015 - Present)</span>
+                <p><strong>Designation : </strong> Senior Consultant (Tech Lead)</p>
+              </div>
+              <div class="col-sm">
+                  <a href="https://www.linkedin.com/company/koandigital/about/">Koan Digital Solutions Pvt. Ltd.</a>
+                  <span>(Jul, 2013 - Dec, 2014)</span>
+                  <p><strong>Designation : </strong> Frontend Developer</p>
+                </div>
+          </div>
+        </div>
+        <!--TECH STACK-->
+        <div class="container exp">
+            <div class="row">
+                <h3>tech stack I know and good at</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                  <p><strong>I write markups in : </strong> HTML</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p><strong>I write styles in : </strong> CSS3, Saas</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p><strong>I write logical & efficient code in : </strong> JavaScript, ReactJS, PolymerJS, Redux, NodeJS, ExpressJS, D3.js 
+                      and Python</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p><strong>I store data in : </strong> MongoDB</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p><strong>I create packages/bundles using : </strong> Webpack, Gulp</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p><strong>I create Mobile Apps using : </strong> React Native & Flutter</p>
+                </div>
+            </div>
+          </div>
+          <!--PROJECTS-->
+          <div class="container exp">
+              <div class="row">
+                  <h3>proud projects</h3>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                    <a href="projects/whatsCooking.html">what's Cooking</a>
+                    <span>(Personal Project)</span>
+                    <p><strong>Tech Highlights : </strong> ReactJS</p>
+                    <p><strong>Summary : a simple ReactJS Application to show recipe of your favourite dish. </strong></p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                    <a href="projects/faa.html">Amway FAA Simulator</a>
+                    <span>(Official Project)</span>
+                    <p><strong>Tech Highlights : </strong> Angular 2, HTML, CSS</p>
+                    <p><strong>Summary : A front-end simulator for Amway Members to calculate and check their project bonus of the year based on their market.</strong></p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                    <a href="projects/mcdonalds.html">McDonalds YRTK(Your Right To Know)</a>
+                    <span>(Official Project)</span>
+                    <p><strong>Tech Highlights : </strong> AngularJS, HTML, CSS</p>
+                    <p><strong>Summary : This project is a AngularJS based web application and serves as a platform for the users to ask questions and get answers from Mcdonalds.</strong></p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-sm">
+                    <a href="">Amway Mybiz</a>
+                    <span>(Official Project)</span>
+                    <p><strong>Tech Highlights : </strong> PolymerJS, NodeJS, Redux</p>
+                    <p><strong>Summary : </strong></p>
+                  </div>
+              </div>
+            </div>
 
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
+            <!--BLOGS-->
+            <div class="container exp">
+                <div class="row">
+                    <h3>oh! I write tech blogs too :)</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="https://medium.com/@himeshvats19/up-running-with-mongodb-in-7-simple-steps-using-brew-on-macos-sierra-785730a7e6b0" target="_blank">Up & Running with MongoDB in 7 simple steps using Brew on macOS Sierra</a>
+                      <span>(10 min read)</span>
+                      <p>
+                        Steps to Follow...
+                      </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="https://medium.com/@himeshvats19/javascript-functions-5d592a070505">JavaScript — Functions</a>
+                      <span>(4 min read)</span>
+                      <p>
+                        …You will need to know this…at least
+                      </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="https://medium.com/@himeshvats19/class-based-inheritance-prototypes-in-javascript-9e05e31fe9" target="_blank">Class based Inheritance & Prototypes in JavaScript</a>
+                      <span>23rd June, 2019</span>
+                      <p>
+                          Not sure if my function, or a function inside my function...
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="https://medium.com/@himeshvats19/scopes-closures-in-javascript-ac210b8410fb" target="_blank">Scopes & Closures in JavaScript</a>
+                      <span>25th June, 2019</span>
+                      <p>
+                        Not sure if my function, or a function inside my function...
+                      </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="https://medium.com/@himeshvats19/callbacks-promises-cbf7716d6b4d" target="_blank">Callbacks & Promises</a>
+                      <span>25th June, 2019</span>
+                      <p>
+                        Lets Promise to learn promises...
+                      </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="https://medium.com/@himeshvats19/async-await-7b281f63843f" target="_blank">Async & Await</a>
+                      <span>26th June, 2019</span>
+                      <p>
+                        Let's make better Promises...
+                      </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                      <a href="https://medium.com/@himeshvats19/es6-features-javascript-4a9caf8aa74d" target="_blank">ES6 Features — JavaScript</a>
+                      <span>26th June, 2019</span>
+                      <p>
+                        ES6 PLZ PLZ PLZ...
+                      </p>
+                    </div>
+                </div>
+              </div>
+               <!--Hobby-->
+        <div class="container exp">
+            <div class="row">
+                <h3>let's talk</h3>
+            </div>
+            <div class="row">
+                <a href="">+91-9945377423</a>
+                <span>(if I'm not picking up, I'm either in a meeting or driving or sleeping...don't worry I'll call you back)</span>
+            </div>
+            <div class="row">
+                <a href="">vatshimesh@gmail.com</a>
+                <span>(drop me an email, I'll reply back as soon as possible...)</span>
+            </div>
+        </div>
+        <div class="container exp"></div>
 
-  };
 
-  // Load the SDK asynchronously
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-
-  // Here we run a very simple test of the Graph API after login is
-  // successful.  See statusChangeCallback() for when this call is made.
-  function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api(
-  '/me',
-  'GET',
-  {"fields":"id,name,picture"},
-  function(response) {
-      document.getElementById('status').innerHTML = '<img src="'+response.picture.data.url+'"/>'
-  }
-);
-  }
-</script>
-
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
-
-<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-</fb:login-button>-->
-<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="false"></div>
-
-<div id="status">
-</div>
-
-</body>
+  </body>
 </html>

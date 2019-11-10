@@ -1,0 +1,36 @@
+body{
+    background-color: #fffaf2;
+    font-family: 'Ubuntu', sans-serif;
+  }
+.main{
+  margin-top:200px;
+}
+.exp{
+  margin-top: 100px;
+}
+.main{
+  margin-bottom: 100px;
+}
+.main ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.main img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.hobby-pic{
+  width: 100%;
+  height: auto;
+}
+
+.btn{
+    background: #8c8c8c;
+    outline: 0;
+    border: 0;
+  }
